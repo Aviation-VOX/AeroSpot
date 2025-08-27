@@ -1,0 +1,17 @@
+# PHP项目常用忽略文件
+/vendor/
+composer.lock
+.env
+*.log
+.idea/
+*.swp
+.DS_Store
+*.bak
+*.tmp
+node_modules/
+# 忽略图片和上传文件目录（如有需要可修改）
+airportphotos/
+spotpointphotos/
+image/
+# 忽略系统文件
+Thumbs.db

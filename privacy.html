@@ -1,0 +1,164 @@
+<!-- privacy.html — AeroSpot 机位系统隐私政策 -->
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AeroSpot 机位系统隐私政策</title>
+  <meta name="color-scheme" content="light dark">
+  <style>
+    :root { --w: 920px; --fg: #1f2328; --muted:#6a737d; --link:#0969da; --bd:#d0d7de; --bg:#fff; --hl:#f6f8fa; }
+    @media (prefers-color-scheme: dark){
+      :root{ --fg:#e6edf3; --muted:#9aa6b2; --link:#58a6ff; --bd:#30363d; --bg:#0d1117; --hl:#11151b; }
+    }
+    html,body{ background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+      margin:0; padding:0; }
+    header{ border-bottom:1px solid var(--bd); }
+    .wrap{ max-width:var(--w); margin:0 auto; padding:24px; }
+    h1{ font-size:28px; margin:.2em 0 .4em; }
+    h2{ font-size:22px; margin:1.2em 0 .6em; }
+    h3{ font-size:18px; margin:1em 0 .5em; }
+    p{ margin:.75em 0; }
+    ul,ol{ padding-left:1.2em; }
+    nav.toc{ border:1px solid var(--bd); border-radius:12px; padding:16px; background:transparent; }
+    nav.toc a{ color:var(--link); text-decoration:none; }
+    small, .muted{ color:var(--muted); }
+    mark{ background:var(--hl); padding:0 .2em; border-radius:4px; }
+    .kv{ display:grid; grid-template-columns: 160px 1fr; gap:.4rem 1rem; }
+    .kv div{ padding:.2rem 0; border-bottom:1px dotted var(--bd); }
+    footer{ border-top:1px solid var(--bd); margin-top:32px; }
+    .callout{ border-left:4px solid var(--link); padding:.75em 1em; background:color-mix(in oklab, var(--link) 6%, var(--bg)); border-radius:8px; }
+    @media print{ nav.toc{page-break-inside:avoid} a[href^="#"]::after{content:""} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>AeroSpot 机位系统隐私政策</h1>
+      <p class="muted">生效日期：<time>2025-08-16</time>　版本：v1.0</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="toc">
+      <strong>目录</strong>
+      <ol>
+        <li><a href="#intro">导言与适用范围</a></li>
+        <li><a href="#collect">我们收集的信息</a></li>
+        <li><a href="#use">我们如何使用信息</a></li>
+        <li><a href="#share">共享、委托处理与第三方</a></li>
+        <li><a href="#cookie">Cookie 与本地存储</a></li>
+        <li><a href="#retention">信息留存期限</a></li>
+        <li><a href="#rights">您的权利</a></li>
+        <li><a href="#minor">未成年人保护</a></li>
+        <li><a href="#security">信息安全</a></li>
+        <li><a href="#transfer">跨境传输</a></li>
+        <li><a href="#changes">政策变更</a></li>
+        <li><a href="#contact">如何联系我们</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <h2 id="intro">导言与适用范围</h2>
+      <p>本《隐私政策》旨在帮助您了解我们如何收集、使用、存储、共享与保护您的个人信息，以及您可如何行使权利。本政策适用于您使用 <strong>AeroSpot 机位系统</strong> 的所有产品与服务。</p>
+
+      <h2 id="collect">我们收集的信息</h2>
+      <h3>1）您主动提供</h3>
+      <ul>
+        <li><strong>账户信息</strong>：昵称、邮箱、密码（仅存储<strong>不可逆哈希</strong>）、头像等。</li>
+        <li><strong>用户内容</strong>：机位记录（坐标、文本、标签、通行提示）、照片与说明、评论与互动。</li>
+        <li><strong>申诉与客服</strong>：您的沟通记录、权利通知材料。</li>
+      </ul>
+      <h3>2）在使用服务过程中自动收集</h3>
+      <ul>
+        <li><strong>日志信息</strong>：IP 地址、User-Agent、设备与浏览器信息、访问时间与页面、操作记录（包括后台管理员操作日志）、<code>last_login_time</code> 等。</li>
+        <li><strong>设备与网络</strong>：粗略地理位置（基于 IP 的城市级定位，用于反作弊与统计）。</li>
+        <li><strong>图片与EXIF</strong>：为展示版权与拍摄信息、审核与反滥用目的，我们在服务端<strong>尽可能保留 EXIF</strong>；EXIF 可能包含拍摄时间、设备参数与地理坐标。若您不希望公开位置等信息，请于上传前自行移除。</li>
+      </ul>
+      <h3>3）来自第三方的必要数据</h3>
+      <ul>
+        <li><strong>地图与定位</strong>：为展示机位与路径，我们会调用地图服务（如高德地图 / OpenStreetMap），这些服务可能获取您的 IP、坐标与设备信息，受其各自隐私政策约束。</li>
+        <li><strong>航空数据源</strong>：为丰富机位与观机体验，我们可能接入 ADS-B / 航行相关数据源（如 adsb.lol、OpenSky Network 等），其数据合规与可用性由其提供方负责。</li>
+        <li><strong>邮件服务</strong>：用于发送系统通知或验证邮件（例如通过企业邮箱 SMTP 服务）。</li>
+      </ul>
+
+      <h2 id="use">我们如何使用信息</h2>
+      <ul>
+        <li>提供、维护与改进服务（含审核、推荐、反作弊、性能监控与故障排查）。</li>
+        <li>展示与检索机位与照片，生成缩略图与添加版权水印。</li>
+        <li>保障安全：检测异常、打击恶意抓取与滥用、保护您的账户与作品。</li>
+        <li>与您沟通：公告通知、政策更新、处理申诉与权利通知。</li>
+        <li>统计分析与产品决策（在可能情况下使用去标识化/聚合形式）。</li>
+      </ul>
+      <p><strong>处理依据</strong>包括：履行合同与提供服务、遵守法律义务、获得您的同意、以及为保障网络与服务安全的“合理事由”。</p>
+
+      <h2 id="share">共享、委托处理与第三方</h2>
+      <p>我们不会向无关第三方出售您的个人信息。仅在以下情形共享或委托处理：</p>
+      <ul>
+        <li><strong>技术与基础设施</strong>（云主机、CDN、图床与备份）— 仅为提供服务之必要信息。</li>
+        <li><strong>地图与数据提供方</strong>（高德/OSM、ADS-B 提供方）— 可能接收您的 IP、坐标或请求元数据。</li>
+        <li><strong>邮件与消息通道</strong>（用于服务通知）。</li>
+        <li><strong>依法披露</strong>：基于法律法规、行政/司法机关要求或为保护他人合法权益所必须时。</li>
+        <li><strong>合并、分立、重组或资产转让</strong>：我们将要求新的持有者继续受本政策约束。</li>
+      </ul>
+
+      <h2 id="cookie">Cookie 与本地存储</h2>
+      <ul>
+        <li>用于会话维持、偏好设置、防 CSRF/滥用与统计分析。</li>
+        <li>您可在浏览器中管理或清除 Cookie，但可能影响部分功能使用。</li>
+      </ul>
+
+      <h2 id="retention">信息留存期限</h2>
+      <div class="kv" role="table" aria-label="留存期限">
+        <div><strong>账户资料</strong></div><div>在您账户存续期间保存；注销后 <mark>30 天</mark>内删除或匿名化（法律另有规定的除外）。</div>
+        <div><strong>用户内容</strong></div><div>您删除后通常 <mark>7–30 天</mark>内从前端与检索下线；备份介质最长 <mark>90 天</mark>内清理。</div>
+        <div><strong>访问与安全日志</strong></div><div>原则上保留 <mark>180 天</mark>；为追踪严重滥用或符合法定要求可适当延长。</div>
+        <div><strong>后台管理员操作日志</strong></div><div>为合规与安全审计，通常保留 <mark>3 年</mark>或法律要求的更长期限。</div>
+      </div>
+      <p class="muted">注：上述期限为一般情形；如为履行法定义务、解决争议或执行协议之必要，我们可能延长保存。</p>
+
+      <h2 id="rights">您的权利</h2>
+      <ul>
+        <li><strong>访问与复制</strong>：有权查询、获取您的个人信息副本。</li>
+        <li><strong>更正与补充</strong>：发现不准确可申请更正。</li>
+        <li><strong>删除</strong>：在符合法律规定的情形下可请求删除。</li>
+        <li><strong>撤回同意</strong>：对依赖同意的处理活动，您可随时撤回。</li>
+        <li><strong>账户注销</strong>：您可申请注销账户；注销后我们将按留存章节处理数据。</li>
+        <li><strong>申诉</strong>：对处理结果有异议，可通过下述方式申诉与投诉。</li>
+      </ul>
+
+      <h2 id="minor">未成年人保护</h2>
+      <p>我们不面向 <strong>10 周岁以下</strong>的未成年人提供注册服务；10—18 周岁的未成年人应在监护人同意与指导下使用，并在上传前充分考虑位置与影像公开可能带来的风险。</p>
+
+      <h2 id="security">信息安全</h2>
+      <ul>
+        <li>密码以<strong>不可逆哈希</strong>形式存储；传输使用加密通道（HTTPS）。</li>
+        <li>实行访问控制与最小权限原则，记录关键操作审计日志。</li>
+        <li>合理范围内使用风控与反滥用机制（如速率限制、异常检测）。</li>
+      </ul>
+      <p class="callout">互联网并非绝对安全环境。如发生可能危及您权利的安全事件，我们将依法履行告知义务并采取补救措施。</p>
+
+      <h2 id="transfer">跨境传输</h2>
+      <p>鉴于全球网络与第三方服务的客观属性，您的信息可能会在境外服务器被处理或存储。我们将遵循适用法律并采取必要措施，确保跨境传输后的个人信息获得充分保护。</p>
+
+      <h2 id="changes">政策变更</h2>
+      <p>我们可能适时更新本政策。若属于重大变更（如处理目的、类型、共享对象、您的权利与行使方式发生实质变化），我们将通过站内公告或邮件等合理方式提示。</p>
+
+      <h2 id="contact">如何联系我们</h2>
+      <ul>
+        <li>运营者：<strong>Aviation VOX</strong></li>
+        <li>数据保护联系人：<a href="mailto:admin@aviationvox.com">admin@aviationvox.com</a></li>
+        <li>联系地址：<strong>N/A</strong></li>
+      </ul>
+      <p>如您对本政策或您的个人信息处理有任何疑问、建议或投诉，请与我们联系；我们通常会在 <strong>15 个工作日</strong>内予以答复。</p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="muted">© <span id="y"></span> Aviation VOX · AeroSpot</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

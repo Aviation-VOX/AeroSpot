@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>加入交流群 - Aviation VOX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 26px;
+    }
+    p.subtext {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      padding: 25px 20px;
+      width: 300px;
+      max-width: 90%;
+    }
+    .card h2 {
+      font-size: 18px;
+      margin: 0 0 8px;
+    }
+    .card .group-id {
+      color: #777;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .qr-img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+    }
+    .tip {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #999;
+    }
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .back-button:hover {
+      background: #f5f5f5;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+    .back-button::before {
+      content: "←";
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 返回按钮 -->
+  <a href="javascript:history.back()" class="back-button">返回</a>
+
+  <h1>加入我们的交流群</h1>
+  <p class="subtext">获取技术支持、答疑解惑和飞友交流</p>
+
+  <div class="container">
+    <!-- 微信公众号 -->
+    <div class="card">
+      <h2>微信公众号</h2>
+      <div class="group-id">关注获取最新动态</div>
+      <img class="qr-img" src="/wxgzh.jpg" alt="微信公众号二维码">
+      <div class="tip">* 长按识别二维码关注公众号</div>
+    </div>
+
+    <!-- 微信群 -->
+    <div class="card">
+      <h2>微信群</h2>
+      <div class="group-id">扫码添加微信入群</div>
+      <img class="qr-img" src="/wechat_qrcode.jpg" alt="微信群二维码">
+      <div class="tip">* 长按识别二维码 或 使用微信扫码</div>
+    </div>
+
+    <!-- QQ群 -->
+    <div class="card">
+      <h2>QQ群</h2>
+      <div class="group-id">群号：908659280</div>
+      <img class="qr-img" src="/qq_qrcode.jpg" alt="QQ群二维码">
+      <div class="tip">* QQ 扫一扫即可加入</div>
+    </div>
+  </div>
+
+</body>
+</html>
